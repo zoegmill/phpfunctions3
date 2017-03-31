@@ -30,7 +30,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Functional Coffee</title>
+    <title>Space Time</title>
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body class="bg-faded">
