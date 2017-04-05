@@ -4,10 +4,12 @@
 
   // Create coffee array with prices
   $theDrinks = array(
-    'coffee'=>1.25,
-    'espresso'=>2.5,
-    'latte'=>4.25,
-    'mocha'=>4.75
+    'bulldog'=>1.25,
+    'chihuahua'=>2.5,
+    'corgi'=>4.25,
+    'golden retriever'=>4.75,
+    'great dane'=>4.75,
+    'pit bull'=>4.75
   );
 
   // Process the form request
@@ -30,17 +32,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Space Time</title>
+    <title>Puppies</title>
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body class="bg-faded">
     <main class="container py-4">
-      <h1 class="pb-4 font-weight-bold text-center">What Will You Drink?</h1>
+      <h1 class="pb-4 font-weight-bold text-center">Woof Woof</h1>
       <form class="form-inline justify-content-center" action="" method="post">
         <label for="name" class="sr-only">Name</label>
-        <input class="form-control mr-2" type="text" value="<?php echo ( $theName ? $theName : '' );?>" placeholder="Name" name="name" id="name"> <span class="mr-2">wants a</span>
+        <input class="form-control mr-2" type="text" value="<?php echo ( $theName ? $theName : '' );?>" placeholder="Name" name="name" id="name"> <span class="mr-2">type of puppy</span>
         <select class="custom-select mr-2" name="coffee" id="coffee">
-          <?php echo '<option value="'.( $theCoffee ? $theCoffee : 'nothing' ).'">'.( $theCoffee ? capfirst($theCoffee) : 'Select a Drink' ).'</option>'; ?>
+          <?php echo '<option value="'.( $theCoffee ? $theCoffee : 'nothing' ).'">'.( $theCoffee ? capfirst($theCoffee) : 'Pick a puppy' ).'</option>'; ?>
           <?php foreach ($theDrinks as $drink => $price) {
             echo '<option value="'.$drink.'">'.capfirst($drink).'</option>';
           }; ?>

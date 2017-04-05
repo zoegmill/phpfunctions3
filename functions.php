@@ -21,8 +21,8 @@ function makeCoffee($theName, $theDrinks, $theCoffee, $theQuantity) {
       $description = $theName.' ordered '.$theQuantity.' '.$theCoffee.'.';
     } elseif ($theQuantity > 50) {
       $title = 'No '.titlecase($theCoffee).' for '.$theName;
-      $theCoffee = 'rediculous';
-      $description = 'Don&rsquo;t be rediculous, '.$theName.', that&rsquo;s more coffee than any one barista can ever brew on time! Also, you don&rsquo;t have $'.number_format($total, 2).'!';
+      $theCoffee = 'ridiculous';
+      $description = 'Don&rsquo;t be ridiculous, '.$theName.', that&rsquo;s more coffee than any one barista can ever brew on time! Also, you don&rsquo;t have $'.number_format($total, 2).'!';
     } else {
       $title = titlecase($theCoffee).' for '.$theName;
       $theTotal = 'Total: $'.number_format($total, 2);
